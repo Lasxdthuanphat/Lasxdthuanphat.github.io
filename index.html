@@ -1,88 +1,164 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Công ty TNHH LAS-XD Thuận Phát</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+font-family:system-ui;
+}
+
+.navbar{
+background:#0c3c6c;
+}
+
+.navbar-brand img{
+height:50px;
+}
+
+.hero{
+height:600px;
+background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") center/cover no-repeat;
+display:flex;
+align-items:center;
+color:white;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:700;
+}
+
+.section{
+padding:80px 0;
+}
+
+.service-card{
+border:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.project-img{
+height:220px;
+object-fit:cover;
+}
+
+.stats{
+background:#0c3c6c;
+color:white;
+}
+
+footer{
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
 
-<div class="container header-flex">
+<a class="navbar-brand" href="#">
+<img src="logo.png">
+</a>
 
-<img src="logo.png" class="logo">
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-<nav>
-<a href="index.html">Trang chủ</a>
-<a href="about.html">Giới thiệu</a>
-<a href="services.html">Dịch vụ</a>
-<a href="projects.html">Dự án</a>
-<a href="contact.html">Liên hệ</a>
-</nav>
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Dịch vụ</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Dự án</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+
+</ul>
 
 </div>
-
-</header>
+</div>
+</nav>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="container hero-content">
 
 <h1>CÔNG TY TNHH LAS-XD THUẬN PHÁT</h1>
 
-<p>
+<p class="lead">
 Khảo sát • Thiết kế • Thi công công trình xây dựng
 </p>
 
-<a href="contact.html" class="btn">Liên hệ ngay</a>
+<a class="btn btn-warning btn-lg">Liên hệ tư vấn</a>
 
 </div>
 
 </section>
 
-<section class="about">
+<section class="section">
 
-<div class="container">
+<div class="container text-center">
 
-<h2>Giới thiệu công ty</h2>
+<h2 class="mb-5">Dịch vụ của chúng tôi</h2>
 
-<p>
-Công ty TNHH LAS-XD Thuận Phát hoạt động trong lĩnh vực khảo sát,
-thiết kế và thi công các công trình xây dựng dân dụng và công nghiệp.
-Chúng tôi luôn đặt chất lượng công trình và uy tín doanh nghiệp lên hàng đầu.
-</p>
+<div class="row g-4">
 
+<div class="col-md-4">
+<div class="card service-card p-4">
+<h4>Khảo sát xây dựng</h4>
+<p>Khảo sát địa hình, địa chất phục vụ thiết kế và thi công.</p>
+</div>
 </div>
 
-</section>
-
-<section class="services">
-
-<div class="container">
-
-<h2>Dịch vụ của chúng tôi</h2>
-
-<div class="service-grid">
-
-<div class="service-box">
-<h3>Khảo sát xây dựng</h3>
-<p>Khảo sát địa hình, địa chất phục vụ thiết kế công trình.</p>
-</div>
-
-<div class="service-box">
-<h3>Thiết kế công trình</h3>
+<div class="col-md-4">
+<div class="card service-card p-4">
+<h4>Thiết kế công trình</h4>
 <p>Thiết kế kiến trúc, kết cấu, hạ tầng kỹ thuật.</p>
 </div>
+</div>
 
-<div class="service-box">
-<h3>Thi công xây dựng</h3>
-<p>Thi công các công trình dân dụng và công nghiệp.</p>
+<div class="col-md-4">
+<div class="card service-card p-4">
+<h4>Thi công xây dựng</h4>
+<p>Thi công công trình dân dụng và công nghiệp.</p>
+</div>
 </div>
 
 </div>
@@ -91,23 +167,53 @@ Chúng tôi luôn đặt chất lượng công trình và uy tín doanh nghiệp
 
 </section>
 
-<section class="stats">
+<section class="section bg-light">
 
-<div class="container stats-grid">
+<div class="container">
 
-<div>
-<h3>15+</h3>
+<h2 class="text-center mb-5">Dự án tiêu biểu</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<img class="img-fluid project-img" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+</div>
+
+<div class="col-md-4">
+<img class="img-fluid project-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+</div>
+
+<div class="col-md-4">
+<img class="img-fluid project-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section stats">
+
+<div class="container text-center">
+
+<div class="row">
+
+<div class="col-md-4">
+<h2>15+</h2>
 <p>Năm kinh nghiệm</p>
 </div>
 
-<div>
-<h3>120+</h3>
+<div class="col-md-4">
+<h2>120+</h2>
 <p>Dự án hoàn thành</p>
 </div>
 
-<div>
-<h3>50+</h3>
-<p>Khách hàng</p>
+<div class="col-md-4">
+<h2>50+</h2>
+<p>Đối tác khách hàng</p>
+</div>
+
 </div>
 
 </div>
@@ -116,23 +222,12 @@ Chúng tôi luôn đặt chất lượng công trình và uy tín doanh nghiệp
 
 <footer>
 
-<div class="container">
-
-<p>
-Địa chỉ: 26 Phan Anh, Phường An Khê, Quận Thanh Khê, Đà Nẵng
-</p>
-
-<p>
-Tel: 0236 6517 174 | Email: thuanphatkt.company@gmail.com
-</p>
-
-<p>
-© 2026 LAS-XD Thuận Phát
-</p>
-
-</div>
+<p>Địa chỉ: 26 Phan Anh, Đà Nẵng</p>
+<p>Tel: 0236 6517 174 | Email: thuanphatkt.company@gmail.com</p>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
