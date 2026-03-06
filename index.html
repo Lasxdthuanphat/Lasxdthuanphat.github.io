@@ -1,195 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>LAS-XD Thuận Phát</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-body{
-background:#f4f6f9;
-color:#333;
-}
-
-/* HEADER */
-
-header{
-background:white;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 10%;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-z-index:100;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:bold;
-font-size:20px;
-color:#0d3b66;
-}
-
-.logo img{
-height:45px;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:600;
-}
-
-nav a:hover{
-color:#0d3b66;
-}
-
-/* HERO */
-
-.hero{
-height:80vh;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
-
-.hero h1{
-font-size:50px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-background:#0d3b66;
-padding:15px 30px;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-/* SERVICES */
-
-.services{
-padding:80px 10%;
-background:white;
-text-align:center;
-}
-
-.services h2{
-margin-bottom:40px;
-font-size:35px;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#f9f9f9;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card i{
-font-size:40px;
-color:#0d3b66;
-margin-bottom:15px;
-}
-
-/* ABOUT */
-
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-padding:80px 10%;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:10px;
-}
-
-/* STATS */
-
-.stats{
-background:#0d3b66;
-color:white;
-display:flex;
-justify-content:space-around;
-padding:60px 10%;
-text-align:center;
-}
-
-.stats h3{
-font-size:40px;
-}
-
-/* CONTACT */
-
-.contact{
-padding:80px 10%;
-background:white;
-}
-
-.contact form{
-display:grid;
-gap:15px;
-max-width:600px;
-}
-
-input,textarea{
-padding:12px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-/* FOOTER */
-
-footer{
-background:#0d3b66;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-</style>
 </head>
 
 <body>
@@ -197,94 +19,69 @@ margin-top:40px;
 <header>
 
 <div class="logo">
+
 <img src="logo.png">
-LAS-XD THUẬN PHÁT
+
+<span>LAS-XD Thuận Phát</span>
+
 </div>
 
 <nav>
-<a href="#">Trang chủ</a>
-<a href="#">Giới thiệu</a>
-<a href="#">Dịch vụ</a>
-<a href="#">Dự án</a>
-<a href="#">Liên hệ</a>
+
+<a href="index.html">Trang chủ</a>
+<a href="about.html">Giới thiệu</a>
+<a href="services.html">Dịch vụ</a>
+<a href="projects.html">Dự án</a>
+<a href="news.html">Tin tức</a>
+<a href="contact.html">Liên hệ</a>
+
 </nav>
 
 </header>
 
-
 <section class="hero">
 
-<div>
+<h1>TRUNG TÂM THÍ NGHIỆM VẬT LIỆU XÂY DỰNG</h1>
 
-<h1>Trung Tâm Thí Nghiệm & Kiểm Định Xây Dựng</h1>
+<p>Kiểm định – Thí nghiệm – Chứng nhận chất lượng công trình</p>
 
-<p>Đơn vị thí nghiệm vật liệu xây dựng – kiểm định công trình uy tín</p>
-
-<a class="btn">Liên hệ ngay</a>
-
-</div>
+<a class="btn" href="contact.html">Liên hệ ngay</a>
 
 </section>
 
+<section class="services-home">
 
+<h2>DỊCH VỤ CHÍNH</h2>
 
-<section class="services">
-
-<h2>Dịch vụ của chúng tôi</h2>
-
-<div class="service-grid">
+<div class="grid">
 
 <div class="card">
 <i class="fa-solid fa-flask"></i>
-<h3>Thí nghiệm vật liệu xây dựng</h3>
-<p>Thí nghiệm bê tông, thép, xi măng, đất nền công trình.</p>
+<h3>Thí nghiệm vật liệu</h3>
+<p>Thí nghiệm bê tông, thép, xi măng.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-building"></i>
 <h3>Kiểm định công trình</h3>
-<p>Đánh giá chất lượng, độ an toàn và khả năng chịu lực công trình.</p>
+<p>Đánh giá chất lượng và an toàn công trình.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-ruler-combined"></i>
 <h3>Thí nghiệm hiện trường</h3>
-<p>Thí nghiệm nén tĩnh cọc, kiểm tra nền móng và vật liệu tại công trình.</p>
+<p>Nén tĩnh cọc, kiểm tra nền móng.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-certificate"></i>
 <h3>Tư vấn chứng nhận</h3>
-<p>Tư vấn tiêu chuẩn xây dựng, hồ sơ chất lượng và kiểm tra vật liệu.</p>
+<p>Tư vấn tiêu chuẩn xây dựng.</p>
 </div>
 
 </div>
 
 </section>
-
-
-
-<section class="about">
-
-<div>
-
-<h2>Giới thiệu</h2>
-
-<p>
-
-LAS-XD Thuận Phát là đơn vị chuyên thí nghiệm vật liệu xây dựng, kiểm định chất lượng công trình và tư vấn kỹ thuật xây dựng.
-
-Chúng tôi cung cấp dịch vụ nhanh chóng, chính xác, đáp ứng tiêu chuẩn xây dựng Việt Nam.
-
-</p>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-
-</section>
-
-
 
 <section class="stats">
 
@@ -303,46 +100,17 @@ Chúng tôi cung cấp dịch vụ nhanh chóng, chính xác, đáp ứng tiêu 
 <p>Khách hàng</p>
 </div>
 
-<div>
-<h3>24/7</h3>
-<p>Hỗ trợ</p>
-</div>
-
 </section>
-
-
-
-<section class="contact">
-
-<h2>Liên hệ</h2>
-
-<form>
-
-<input placeholder="Họ và tên">
-
-<input placeholder="Email">
-
-<input placeholder="Số điện thoại">
-
-<textarea placeholder="Nội dung"></textarea>
-
-<button class="btn">Gửi liên hệ</button>
-
-</form>
-
-</section>
-
 
 <footer>
 
 <p>© 2026 LAS-XD Thuận Phát</p>
 
-<p>26 Phan Anh - TP Đà Nẵng</p>
+<p>26 Phan Anh – Đà Nẵng</p>
 
 <p>Tel: 0236 6517 174</p>
 
 </footer>
-
 
 </body>
 </html>
