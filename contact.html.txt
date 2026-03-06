@@ -1,0 +1,13 @@
+<h1>Liên h?</h1>
+
+<form>
+
+<input placeholder="H? tên">
+
+<input placeholder="Email">
+
+<textarea placeholder="N?i dung"></textarea>
+
+<button>G?i</button>
+
+</form>

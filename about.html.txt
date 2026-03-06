@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Gi?i thi?u</title>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png">
+
+LAS-XD Thu?n Phát
+
+</div>
+
+</header>
+
+<section class="services-home">
+
+<h1>Gi?i thi?u công ty</h1>
+
+<p>
+
+LAS-XD Thu?n Phát là don v? chuyên thí nghi?m v?t li?u xây d?ng, ki?m d?nh ch?t lu?ng công trình và tu v?n k? thu?t.
+
+</p>
+
+</section>
+
+</body>
+</html>

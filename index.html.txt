@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>LAS-XD Thu?n Phát</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png">
+
+<span>LAS-XD Thu?n Phát</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">Trang ch?</a>
+<a href="about.html">Gi?i thi?u</a>
+<a href="services.html">D?ch v?</a>
+<a href="projects.html">D? án</a>
+<a href="news.html">Tin t?c</a>
+<a href="contact.html">Liên h?</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>TRUNG TÂM THÍ NGHI?M V?T LI?U XÂY D?NG</h1>
+
+<p>Ki?m d?nh – Thí nghi?m – Ch?ng nh?n ch?t lu?ng công trình</p>
+
+<a class="btn" href="contact.html">Liên h? ngay</a>
+
+</section>
+
+<section class="services-home">
+
+<h2>D?CH V? CHÍNH</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fa-solid fa-flask"></i>
+<h3>Thí nghi?m v?t li?u</h3>
+<p>Thí nghi?m bê tông, thép, xi mang.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building"></i>
+<h3>Ki?m d?nh công trình</h3>
+<p>Ðánh giá ch?t lu?ng và an toàn công trình.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-ruler-combined"></i>
+<h3>Thí nghi?m hi?n tru?ng</h3>
+<p>Nén tinh c?c, ki?m tra n?n móng.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-certificate"></i>
+<h3>Tu v?n ch?ng nh?n</h3>
+<p>Tu v?n tiêu chu?n xây d?ng.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+<h3>10+</h3>
+<p>Nam kinh nghi?m</p>
+</div>
+
+<div>
+<h3>500+</h3>
+<p>D? án</p>
+</div>
+
+<div>
+<h3>1000+</h3>
+<p>Khách hàng</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 LAS-XD Thu?n Phát</p>
+
+<p>26 Phan Anh – Ðà N?ng</p>
+
+<p>Tel: 0236 6517 174</p>
+
+</footer>
+
+</body>
+</html>
