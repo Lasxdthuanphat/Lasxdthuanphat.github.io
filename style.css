@@ -1,89 +1,84 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<title>LASXD Thuận Phát</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
 
-<body>
+.container{
+width:1200px;
+margin:auto;
+}
 
-<header>
-<div class="container header-flex">
+header{
+background:#0a3c8a;
+color:white;
+}
 
-<img src="images/logo.png" class="logo">
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px;
+}
 
-<nav>
-<a href="index.html">Trang chủ</a>
-<a href="gioithieu.html">Giới thiệu</a>
-<a href="dichvu.html">Dịch vụ</a>
-<a href="duan.html">Dự án</a>
-<a href="lienhe.html">Liên hệ</a>
-</nav>
+.logo{
+height:60px;
+}
 
-</div>
-</header>
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
 
+.banner{
+background:url('../images/banner.jpg') center/cover;
+height:500px;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-<section class="banner">
+.banner h1{
+font-size:42px;
+}
 
-<h1>TRUNG TÂM THÍ NGHIỆM VẬT LIỆU XÂY DỰNG</h1>
-<p>Công ty TNHH Kiểm định xây dựng Thuận Phát</p>
+.services{
+padding:60px 0;
+text-align:center;
+}
 
-</section>
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
 
+.service{
+background:white;
+padding:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-<section class="services container">
+.service img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
 
-<h2>DỊCH VỤ</h2>
+.about{
+background:white;
+padding:60px;
+text-align:center;
+}
 
-<div class="grid">
-
-<div class="box">
-<h3>Thí nghiệm vật liệu</h3>
-<p>Kiểm định bê tông, cốt thép, vật liệu xây dựng.</p>
-</div>
-
-<div class="box">
-<h3>Kiểm định công trình</h3>
-<p>Đánh giá chất lượng công trình xây dựng.</p>
-</div>
-
-<div class="box">
-<h3>Quan trắc công trình</h3>
-<p>Theo dõi lún, nghiêng, biến dạng công trình.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="projects">
-
-<h2>DỰ ÁN TIÊU BIỂU</h2>
-
-<div class="grid container">
-
-<img src="images/project1.jpg">
-<img src="images/project2.jpg">
-<img src="images/project3.jpg">
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>
-Công ty TNHH Kiểm định xây dựng Thuận Phát  
-Địa chỉ: 26 Phan Anh  
-Tel: 0236 6517 174  
-Email: thuanphatkt.company@gmail.com
-</p>
-
-</footer>
-
-</body>
-</html>
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:30px;
+}
