@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LAS-XD Thuận Phát</title>
+<title>CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f5f6fa;
 color:#333;
 }
 
+/* HEADER */
+
 header{
-background:#0a2a66;
-color:white;
-padding:20px;
+background:white;
+border-bottom:3px solid #d71920;
+}
+
+.container{
+width:90%;
+margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
-header h1{
-margin:0;
-font-size:24px;
+.logo img{
+height:60px;
 }
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") center/cover;
-height:420px;
+nav ul{
+list-style:none;
 display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
-
-.hero h2{
-font-size:42px;
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:10px;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.section-title{
-text-align:center;
-font-size:30px;
-margin-bottom:30px;
-color:#0a2a66;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-.service{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#333;
+}
+
+nav a:hover{
+color:#d71920;
+}
+
+/* HERO */
+
+.hero{
+background:#d71920;
+color:white;
 text-align:center;
+padding:100px 20px;
 }
 
-.service h3{
-color:#144bb8;
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
 }
 
-.about{
-background:white;
-padding:35px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.contact{
-background:#ffffff;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.contact p{
+.hero p{
 font-size:18px;
 }
 
 .btn{
-display:inline-block;
-margin-top:15px;
-background:#1e66ff;
-color:white;
+background:#f7941d;
 padding:12px 25px;
-border-radius:6px;
+color:white;
 text-decoration:none;
-font-weight:bold;
-}
-
-.map{
+border-radius:5px;
+display:inline-block;
 margin-top:20px;
 }
 
+/* SECTION */
+
+.section{
+padding:70px 20px;
+width:90%;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#d71920;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#f5f5f5;
+padding:25px;
+border-radius:8px;
+}
+
+.card h3{
+color:#d71920;
+}
+
+/* INFO */
+
+.info{
+background:#fafafa;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+/* FOOTER */
+
 footer{
-margin-top:40px;
-background:#0a2a66;
+background:#222;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
+margin-top:40px;
 }
 
 </style>
@@ -135,118 +139,134 @@ padding:25px;
 
 <header>
 
-<h1>LAS-XD Thuận Phát</h1>
+<div class="container">
+
+<div class="logo">
+<img src="logo.png">
+</div>
 
 <nav>
-<a href="#">Trang chủ</a>
-<a href="#">Giới thiệu</a>
-<a href="#">Dịch vụ</a>
-<a href="#">Liên hệ</a>
+<ul>
+<li><a href="#home">Trang chủ</a></li>
+<li><a href="#about">Giới thiệu</a></li>
+<li><a href="#services">Dịch vụ</a></li>
+<li><a href="#contact">Liên hệ</a></li>
+</ul>
 </nav>
+
+</div>
 
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<h2>
-Phòng thí nghiệm vật liệu xây dựng<br>
-Uy tín – Chính xác – Nhanh chóng
-</h2>
+<h1>CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT</h1>
+
+<p>Thí nghiệm vật liệu xây dựng – Kiểm định chất lượng công trình</p>
+
+<a href="#contact" class="btn">Liên hệ tư vấn</a>
 
 </section>
 
-<div class="container">
+<section class="section" id="about">
 
-<h2 class="section-title">Giới thiệu</h2>
-
-<div class="about">
+<h2>Giới thiệu công ty</h2>
 
 <p>
 
-Công ty TNHH LAS-XD Thuận Phát chuyên cung cấp dịch vụ thí nghiệm
-vật liệu xây dựng phục vụ các công trình giao thông, dân dụng
-và hạ tầng kỹ thuật.
+CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT được thành lập ngày 10/09/2018, hoạt động trong lĩnh vực kiểm tra và phân tích kỹ thuật phục vụ ngành xây dựng.
+
+Công ty chuyên cung cấp các dịch vụ thí nghiệm vật liệu xây dựng, kiểm định chất lượng công trình, phân tích và đánh giá kỹ thuật nhằm đảm bảo chất lượng và độ an toàn cho các công trình xây dựng.
 
 </p>
 
-<p>
+</section>
 
-Chúng tôi cam kết kết quả thí nghiệm chính xác,
-thiết bị hiện đại và đội ngũ kỹ thuật giàu kinh nghiệm.
+<section class="section" id="services">
 
-</p>
-
-</div>
-
-</div>
-
-<div class="container">
-
-<h2 class="section-title">Dịch vụ</h2>
+<h2>Dịch vụ</h2>
 
 <div class="services">
 
-<div class="service">
-<h3>Thí nghiệm bê tông</h3>
-<p>Kiểm tra cường độ và chất lượng bê tông</p>
+<div class="card">
+<h3>Thí nghiệm vật liệu xây dựng</h3>
+<p>Thực hiện các thí nghiệm đánh giá chất lượng bê tông, xi măng, cốt thép và vật liệu xây dựng.</p>
 </div>
 
-<div class="service">
-<h3>Thí nghiệm đất</h3>
-<p>Phân tích cơ lý đất nền công trình</p>
+<div class="card">
+<h3>Kiểm định chất lượng công trình</h3>
+<p>Kiểm tra và đánh giá khả năng chịu lực, độ an toàn và chất lượng công trình.</p>
 </div>
 
-<div class="service">
-<h3>Thí nghiệm nhựa đường</h3>
-<p>Kiểm tra vật liệu mặt đường</p>
+<div class="card">
+<h3>Phân tích kỹ thuật</h3>
+<p>Phân tích các chỉ tiêu kỹ thuật của vật liệu và kết cấu xây dựng.</p>
 </div>
 
-<div class="service">
-<h3>Kiểm định VLXD</h3>
-<p>Đánh giá chất lượng vật liệu xây dựng</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="container">
-
-<h2 class="section-title">Liên hệ</h2>
-
-<div class="contact">
-
-<p>🏢 Công ty TNHH LAS-XD Thuận Phát</p>
-
-<p>📞 Điện thoại: 0900 000 000</p>
-
-<p>📧 Email: lasxdthuanphat@gmail.com</p>
-
-<a class="btn" href="tel:0900000000">
-Gọi ngay
-</a>
-
-<div class="map">
-
-<iframe
-src="https://maps.google.com/maps?q=vietnam&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="300"
-style="border:0;">
-</iframe>
-
+<div class="card">
+<h3>Tư vấn kỹ thuật xây dựng</h3>
+<p>Tư vấn giải pháp kiểm soát chất lượng vật liệu và quy trình kỹ thuật.</p>
 </div>
 
 </div>
 
-</div>
+</section>
+
+<section class="section info">
+
+<h2>Thông tin doanh nghiệp</h2>
+
+<p>
+
+Tên công ty: CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT<br>
+Tên quốc tế: THUAN PHAT TECHNICAL COMPANY LIMITED<br>
+Tên viết tắt: THUANPHAT TNC CO., LTD<br>
+Mã số thuế: 0401923171<br>
+Người đại diện: Trần Thị Trương Bích<br>
+Ngày thành lập: 10/09/2018
+
+</p>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Liên hệ</h2>
+
+<p>
+
+Địa chỉ:<br>
+
+Thửa đất số 1235, tờ bản đồ số 06, tổ 16<br>
+
+Phường Hoà An, Quận Cẩm Lệ, TP Đà Nẵng
+
+</p>
+
+<p>
+
+Điện thoại: 0236 6517 174
+
+</p>
+
+<p>
+
+Email: thuanphatkt.company@gmail.com
+
+</p>
+
+</section>
 
 <footer>
 
-© 2025 LAS-XD Thuận Phát  
-Thiết kế website miễn phí
+<p>
+
+© 2025 CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT
+
+</p>
 
 </footer>
 
 </body>
+
 </html>
