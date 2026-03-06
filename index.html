@@ -7,13 +7,13 @@
 
 <title>CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-font-family:'Montserrat',sans-serif;
+font-family:Poppins;
 color:#333;
 }
 
@@ -24,7 +24,6 @@ background:white;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 position:sticky;
 top:0;
-z-index:100;
 }
 
 .container{
@@ -42,7 +41,7 @@ height:60px;
 
 nav ul{
 display:flex;
-gap:30px;
+gap:25px;
 list-style:none;
 }
 
@@ -59,15 +58,19 @@ color:#d71920;
 /* HERO */
 
 .hero{
+height:450px;
 background:linear-gradient(120deg,#d71920,#f7941d);
 color:white;
-padding:120px 20px;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+flex-direction:column;
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:10px;
+font-size:45px;
+margin:10px;
 }
 
 .hero p{
@@ -79,13 +82,12 @@ background:white;
 color:#d71920;
 padding:12px 30px;
 border-radius:30px;
-display:inline-block;
 margin-top:20px;
 text-decoration:none;
 font-weight:600;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
 padding:80px 20px;
@@ -111,12 +113,12 @@ gap:30px;
 background:white;
 padding:30px;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
 .card h3{
@@ -127,8 +129,8 @@ color:#d71920;
 
 .about{
 background:#f7f7f7;
-text-align:center;
 line-height:1.7;
+text-align:center;
 }
 
 /* CONTACT */
@@ -144,7 +146,6 @@ background:#222;
 color:white;
 text-align:center;
 padding:40px;
-margin-top:50px;
 }
 
 </style>
@@ -162,12 +163,14 @@ margin-top:50px;
 </div>
 
 <nav>
+
 <ul>
 <li><a href="#">Trang chủ</a></li>
 <li><a href="#about">Giới thiệu</a></li>
 <li><a href="#services">Dịch vụ</a></li>
 <li><a href="#contact">Liên hệ</a></li>
 </ul>
+
 </nav>
 
 </div>
@@ -180,7 +183,7 @@ margin-top:50px;
 
 <p>Thí nghiệm vật liệu xây dựng – Kiểm định chất lượng công trình</p>
 
-<a href="#contact" class="btn">Liên hệ ngay</a>
+<a href="#contact" class="btn">Liên hệ tư vấn</a>
 
 </section>
 
@@ -190,9 +193,9 @@ margin-top:50px;
 
 <p>
 
-CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT được thành lập năm 2018, hoạt động trong lĩnh vực kiểm tra và phân tích kỹ thuật trong xây dựng.
+CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT hoạt động trong lĩnh vực kiểm tra và phân tích kỹ thuật trong xây dựng.
 
-Chúng tôi chuyên cung cấp các dịch vụ thí nghiệm vật liệu xây dựng, kiểm định chất lượng công trình và phân tích kỹ thuật nhằm đảm bảo độ an toàn và chất lượng cho các dự án xây dựng.
+Công ty chuyên cung cấp các dịch vụ thí nghiệm vật liệu xây dựng, kiểm định chất lượng công trình và phân tích kỹ thuật nhằm đảm bảo chất lượng và độ an toàn cho các công trình.
 
 </p>
 
@@ -200,56 +203,28 @@ Chúng tôi chuyên cung cấp các dịch vụ thí nghiệm vật liệu xây 
 
 <section class="section" id="services">
 
-<h2>Dịch vụ của chúng tôi</h2>
+<h2>Dịch vụ</h2>
 
 <div class="services">
 
 <div class="card">
-
 <h3>Thí nghiệm vật liệu xây dựng</h3>
-
-<p>
-
-Thí nghiệm bê tông, xi măng, cốt thép, đất nền và các loại vật liệu xây dựng theo tiêu chuẩn kỹ thuật.
-
-</p>
-
+<p>Thí nghiệm bê tông, xi măng, cốt thép và vật liệu xây dựng.</p>
 </div>
 
 <div class="card">
-
 <h3>Kiểm định chất lượng công trình</h3>
-
-<p>
-
-Đánh giá khả năng chịu lực và độ an toàn của các công trình xây dựng.
-
-</p>
-
+<p>Đánh giá độ an toàn và khả năng chịu lực của công trình.</p>
 </div>
 
 <div class="card">
-
 <h3>Phân tích kỹ thuật</h3>
-
-<p>
-
-Phân tích các chỉ tiêu kỹ thuật của vật liệu và kết cấu công trình.
-
-</p>
-
+<p>Phân tích các chỉ tiêu kỹ thuật của vật liệu xây dựng.</p>
 </div>
 
 <div class="card">
-
-<h3>Tư vấn kỹ thuật xây dựng</h3>
-
-<p>
-
-Tư vấn kiểm soát chất lượng vật liệu và quy trình kỹ thuật xây dựng.
-
-</p>
-
+<h3>Tư vấn kỹ thuật</h3>
+<p>Tư vấn kiểm soát chất lượng và giải pháp kỹ thuật xây dựng.</p>
 </div>
 
 </div>
@@ -266,7 +241,7 @@ Tư vấn kiểm soát chất lượng vật liệu và quy trình kỹ thuật 
 
 Thửa đất số 1235, tờ bản đồ số 06, tổ 16<br>
 
-Phường Hoà An, Quận Cẩm Lệ, Thành phố Đà Nẵng
+Phường Hoà An, Quận Cẩm Lệ, TP Đà Nẵng
 
 </p>
 
@@ -278,9 +253,10 @@ Phường Hoà An, Quận Cẩm Lệ, Thành phố Đà Nẵng
 
 <footer>
 
-<p>© 2025 CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT</p>
+© 2025 CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT
 
 </footer>
 
 </body>
+
 </html>
