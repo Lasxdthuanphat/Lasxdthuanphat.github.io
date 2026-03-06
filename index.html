@@ -1,126 +1,106 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>LAS-XD Thuận Phát</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Inter', sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
 color:#333;
-line-height:1.6;
 }
 
 .container{
-width:90%;
-max-width:1200px;
+width:1200px;
+max-width:90%;
 margin:auto;
 }
+
+/* HEADER */
 
 header{
 background:white;
 border-bottom:1px solid #eee;
 }
 
-.nav{
+.header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 0;
+padding:15px 0;
 }
 
-.logo{
-font-size:22px;
-font-weight:700;
-color:#0b5ed7;
+.logo img{
+height:55px;
 }
 
-.menu a{
+nav a{
 margin-left:25px;
 text-decoration:none;
+font-weight:600;
 color:#333;
-font-weight:500;
 }
 
+nav a:hover{
+color:#0077b6;
+}
+
+/* HERO */
+
 .hero{
-background:url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc") center/cover;
-height:500px;
+height:520px;
+background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") center/cover;
 display:flex;
 align-items:center;
 color:white;
 }
 
-.hero-content{
-background:rgba(0,0,0,0.55);
-padding:40px;
-max-width:600px;
-}
-
 .hero h1{
-font-size:40px;
-margin-bottom:15px;
+font-size:48px;
+margin-bottom:10px;
 }
 
 .hero p{
-margin-bottom:20px;
+font-size:20px;
 }
 
-.btn{
-background:#0b5ed7;
-color:white;
-padding:12px 25px;
-text-decoration:none;
-border-radius:4px;
-}
+/* SECTION */
 
 .section{
 padding:70px 0;
 }
 
-.section-title{
+.section h2{
 text-align:center;
-font-size:32px;
-margin-bottom:50px;
+margin-bottom:40px;
 }
+
+/* SERVICES */
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:30px;
 }
 
 .service{
-border:1px solid #eee;
 padding:30px;
+background:#f8f8f8;
 border-radius:6px;
-transition:0.3s;
-}
-
-.service:hover{
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 .service h3{
-margin-bottom:15px;
-color:#0b5ed7;
+margin-top:0;
+color:#0077b6;
 }
+
+/* ABOUT */
 
 .about{
-background:#f7f7f7;
-}
-
-.about-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
@@ -132,99 +112,107 @@ width:100%;
 border-radius:6px;
 }
 
-.contact{
-background:#0b5ed7;
-color:white;
-text-align:center;
-}
+/* FOOTER */
 
 footer{
 background:#111;
-color:#aaa;
-text-align:center;
-padding:25px;
+color:white;
+padding:40px 0;
+margin-top:50px;
+}
+
+footer p{
+margin:5px 0;
 }
 
 </style>
 
 </head>
+
 <body>
 
 <header>
-<div class="container nav">
+
+<div class="container header">
 
 <div class="logo">
-LAS-XD Thuận Phát
+<img src="logo.png">
 </div>
 
-<div class="menu">
+<nav>
 <a href="#">Trang chủ</a>
 <a href="#">Giới thiệu</a>
 <a href="#">Dịch vụ</a>
+<a href="#">Dự án</a>
 <a href="#">Liên hệ</a>
-</div>
+</nav>
 
 </div>
+
 </header>
 
+
 <section class="hero">
+
 <div class="container">
 
-<div class="hero-content">
+<h1>Phòng thí nghiệm vật liệu xây dựng</h1>
 
-<h1>Phòng Thí Nghiệm Vật Liệu Xây Dựng</h1>
-
-<p>
-Chuyên thí nghiệm vật liệu xây dựng, kiểm định chất lượng công trình,
-đáp ứng tiêu chuẩn LAS-XD theo quy định của Bộ Xây Dựng.
-</p>
-
-<a class="btn" href="#">Liên hệ tư vấn</a>
+<p>Công ty TNHH LAS-XD Thuận Phát</p>
 
 </div>
 
-</div>
 </section>
+
 
 <section class="section">
 
 <div class="container">
 
-<h2 class="section-title">
-Dịch vụ của chúng tôi
-</h2>
+<h2>Dịch vụ thí nghiệm</h2>
 
 <div class="services">
 
 <div class="service">
 <h3>Thí nghiệm bê tông</h3>
 <p>
-Kiểm tra cường độ nén bê tông, bê tông thương phẩm,
-đánh giá chất lượng theo tiêu chuẩn xây dựng.
-</p>
-</div>
-
-<div class="service">
-<h3>Thí nghiệm cốt thép</h3>
-<p>
-Thí nghiệm kéo, uốn thép xây dựng nhằm kiểm tra
-các chỉ tiêu cơ lý của vật liệu.
+Thí nghiệm xác định cường độ nén bê tông, kiểm tra chất lượng bê tông
+theo tiêu chuẩn kỹ thuật.
 </p>
 </div>
 
 <div class="service">
 <h3>Thí nghiệm đất</h3>
 <p>
-Phân tích thành phần đất, xác định độ chặt,
-độ ẩm và các chỉ tiêu cơ lý phục vụ xây dựng.
+Xác định các chỉ tiêu cơ lý của đất phục vụ thiết kế móng và nền công trình.
 </p>
 </div>
 
 <div class="service">
-<h3>Kiểm định vật liệu</h3>
+<h3>Thí nghiệm vật liệu</h3>
 <p>
-Đánh giá chất lượng vật liệu xây dựng phục vụ
-thi công và nghiệm thu công trình.
+Kiểm tra chất lượng xi măng, cát, đá, thép và các vật liệu xây dựng.
+</p>
+</div>
+
+<div class="service">
+<h3>Thí nghiệm hiện trường</h3>
+<p>
+Kiểm tra độ chặt nền đường, móng công trình và các chỉ tiêu kỹ thuật ngoài hiện trường.
+</p>
+</div>
+
+<div class="service">
+<h3>Kiểm định công trình</h3>
+<p>
+Đánh giá chất lượng kết cấu và kiểm định công trình xây dựng.
+</p>
+</div>
+
+<div class="service">
+<h3>Tư vấn kỹ thuật</h3>
+<p>
+Tư vấn giải pháp kỹ thuật và kiểm soát chất lượng vật liệu xây dựng.
 </p>
 </div>
 
@@ -234,64 +222,55 @@ thi công và nghiệm thu công trình.
 
 </section>
 
-<section class="section about">
 
-<div class="container">
+<section class="section">
 
-<div class="about-grid">
+<div class="container about">
 
 <div>
-<h2>Về chúng tôi</h2>
+
+<h2>Giới thiệu</h2>
 
 <p>
-Công ty TNHH LAS-XD Thuận Phát là đơn vị chuyên
-thí nghiệm và kiểm định chất lượng vật liệu xây dựng,
-đáp ứng các tiêu chuẩn kỹ thuật trong lĩnh vực xây dựng.
+Công ty TNHH LAS-XD Thuận Phát là đơn vị chuyên cung cấp
+dịch vụ thí nghiệm và kiểm định chất lượng vật liệu xây dựng.
 </p>
 
 <p>
-Chúng tôi cung cấp dịch vụ thí nghiệm chính xác,
-uy tín và nhanh chóng cho các dự án xây dựng,
-công trình dân dụng và hạ tầng.
+Chúng tôi sở hữu đội ngũ kỹ sư giàu kinh nghiệm và hệ thống thiết bị
+thí nghiệm hiện đại, đáp ứng các tiêu chuẩn kỹ thuật trong lĩnh vực xây dựng.
 </p>
 
 </div>
 
-<img src="https://images.unsplash.com/photo-1581091870627-3a3c8c09c6d4">
+<div>
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
 
 </div>
-
-</div>
-
-</section>
-
-<section class="section contact">
-
-<div class="container">
-
-<h2>Liên hệ</h2>
-
-<p>
-Địa chỉ: Số 26 Phan Anh, Đà Nẵng
-</p>
-
-<p>
-Điện thoại: 0236 6517 174
-</p>
-
-<p>
-Email: thuanphatkt.company@gmail.com
-</p>
 
 </div>
 
 </section>
+
 
 <footer>
 
-© 2026 LAS-XD Thuận Phát
+<div class="container">
+
+<h3>CÔNG TY TNHH LAS-XD THUẬN PHÁT</h3>
+
+<p>Địa chỉ: Số 26 Phan Anh</p>
+
+<p>Điện thoại: 0236 6517 174</p>
+
+<p>Email: thuanphatkt.company@gmail.com</p>
+
+</div>
 
 </footer>
 
+
 </body>
+
 </html>
