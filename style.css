@@ -1,134 +1,89 @@
-body{
-margin:0;
-font-family:Arial;
-background:#f4f6f9;
-}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>LASXD Thuận Phát</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 10%;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+<body>
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
+<header>
+<div class="container header-flex">
 
-.logo img{
-height:50px;
-}
+<img src="images/logo.png" class="logo">
 
-nav a{
-margin-left:20px;
-text-decoration:none;
-font-weight:600;
-color:#333;
-}
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="gioithieu.html">Giới thiệu</a>
+<a href="dichvu.html">Dịch vụ</a>
+<a href="duan.html">Dự án</a>
+<a href="lienhe.html">Liên hệ</a>
+</nav>
 
-.hero{
-height:500px;
-background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
-background-size:cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
+</div>
+</header>
 
-.hero h1{
-font-size:45px;
-}
 
-.btn{
-background:#e53935;
-padding:12px 25px;
-color:white;
-margin-top:20px;
-text-decoration:none;
-}
+<section class="banner">
 
-.services{
-padding:80px 10%;
-text-align:center;
-background:white;
-}
+<h1>TRUNG TÂM THÍ NGHIỆM VẬT LIỆU XÂY DỰNG</h1>
+<p>Công ty TNHH Kiểm định xây dựng Thuận Phát</p>
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
+</section>
 
-.card{
-padding:30px;
-background:#f9f9f9;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
 
-.card i{
-font-size:35px;
-color:#e53935;
-}
+<section class="services container">
 
-.projects{
-padding:80px 10%;
-text-align:center;
-}
+<h2>DỊCH VỤ</h2>
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-}
+<div class="grid">
 
-.gallery img{
-width:100%;
-border-radius:10px;
-}
+<div class="box">
+<h3>Thí nghiệm vật liệu</h3>
+<p>Kiểm định bê tông, cốt thép, vật liệu xây dựng.</p>
+</div>
 
-.contact{
-padding:80px 10%;
-background:white;
-text-align:center;
-}
+<div class="box">
+<h3>Kiểm định công trình</h3>
+<p>Đánh giá chất lượng công trình xây dựng.</p>
+</div>
 
-form{
-display:flex;
-flex-direction:column;
-max-width:400px;
-margin:auto;
-gap:10px;
-}
+<div class="box">
+<h3>Quan trắc công trình</h3>
+<p>Theo dõi lún, nghiêng, biến dạng công trình.</p>
+</div>
 
-input,textarea{
-padding:10px;
-border:1px solid #ccc;
-}
+</div>
 
-button{
-background:#e53935;
-color:white;
-border:none;
-padding:12px;
-}
+</section>
 
-.map iframe{
-width:100%;
-height:400px;
-border:0;
-}
 
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-}
+<section class="projects">
+
+<h2>DỰ ÁN TIÊU BIỂU</h2>
+
+<div class="grid container">
+
+<img src="images/project1.jpg">
+<img src="images/project2.jpg">
+<img src="images/project3.jpg">
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+Công ty TNHH Kiểm định xây dựng Thuận Phát  
+Địa chỉ: 26 Phan Anh  
+Tel: 0236 6517 174  
+Email: thuanphatkt.company@gmail.com
+</p>
+
+</footer>
+
+</body>
+</html>
