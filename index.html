@@ -2,6 +2,7 @@
 <html lang="vi">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,13 +31,13 @@ border-bottom:1px solid #eee;
 
 .header{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 padding:15px 0;
 }
 
 .logo img{
-height:55px;
+height:60px;
 }
 
 nav a{
@@ -47,7 +48,7 @@ color:#333;
 }
 
 nav a:hover{
-color:#0a6db6;
+color:#0b6cb8;
 }
 
 /* HERO */
@@ -61,7 +62,7 @@ color:white;
 }
 
 .hero h1{
-font-size:46px;
+font-size:44px;
 margin-bottom:10px;
 }
 
@@ -89,14 +90,14 @@ gap:30px;
 }
 
 .service{
+background:#f6f6f6;
 padding:30px;
-background:#f5f5f5;
 border-radius:6px;
 }
 
 .service h3{
 margin-top:0;
-color:#0a6db6;
+color:#0b6cb8;
 }
 
 /* ABOUT */
@@ -113,17 +114,51 @@ width:100%;
 border-radius:6px;
 }
 
+/* CLIENTS */
+
+.clients{
+background:#f2f5f7;
+text-align:center;
+}
+
+.client-slider{
+overflow:hidden;
+position:relative;
+}
+
+.client-track{
+display:flex;
+gap:60px;
+animation:scroll 25s linear infinite;
+}
+
+.client-track img{
+height:55px;
+opacity:0.9;
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
 /* FOOTER */
 
 footer{
 background:#111;
 color:white;
 padding:40px 0;
-margin-top:50px;
 }
 
 footer p{
-margin:5px 0;
+margin:6px 0;
 }
 
 </style>
@@ -137,20 +172,25 @@ margin:5px 0;
 <div class="container header">
 
 <div class="logo">
+
 <img src="logo.png">
+
 </div>
 
 <nav>
+
 <a href="#">Trang chủ</a>
 <a href="#">Giới thiệu</a>
 <a href="#">Dịch vụ</a>
 <a href="#">Dự án</a>
 <a href="#">Liên hệ</a>
+
 </nav>
 
 </div>
 
 </header>
+
 
 
 <section class="hero">
@@ -166,60 +206,84 @@ margin:5px 0;
 </section>
 
 
+
 <section class="section">
 
 <div class="container">
 
-<h2>Dịch vụ thí nghiệm vật liệu xây dựng</h2>
+<h2>DỊCH VỤ THÍ NGHIỆM</h2>
 
 <div class="services">
 
 <div class="service">
+
 <h3>Thí nghiệm bê tông</h3>
+
 <p>
-Thí nghiệm xác định cường độ nén bê tông,
-kiểm tra chất lượng bê tông theo tiêu chuẩn xây dựng.
+Thí nghiệm xác định cường độ nén bê tông
+và kiểm tra chất lượng bê tông theo tiêu chuẩn xây dựng.
 </p>
+
 </div>
 
+
 <div class="service">
+
 <h3>Thí nghiệm đất nền</h3>
+
 <p>
-Xác định các chỉ tiêu cơ lý của đất
-phục vụ thiết kế nền móng công trình.
+Xác định các chỉ tiêu cơ lý của đất phục vụ
+thiết kế móng và nền công trình.
 </p>
+
 </div>
 
+
 <div class="service">
+
 <h3>Thí nghiệm vật liệu</h3>
+
 <p>
 Kiểm tra chất lượng xi măng, cát, đá,
 thép và các vật liệu xây dựng.
 </p>
+
 </div>
 
+
 <div class="service">
+
 <h3>Thí nghiệm hiện trường</h3>
+
 <p>
 Thí nghiệm độ chặt nền đường,
 móng công trình và các chỉ tiêu kỹ thuật.
 </p>
+
 </div>
 
+
 <div class="service">
+
 <h3>Kiểm định công trình</h3>
+
 <p>
 Đánh giá chất lượng kết cấu
 và kiểm định an toàn công trình xây dựng.
 </p>
+
 </div>
 
+
 <div class="service">
+
 <h3>Tư vấn kỹ thuật</h3>
+
 <p>
 Tư vấn giải pháp kỹ thuật
 và kiểm soát chất lượng vật liệu xây dựng.
 </p>
+
 </div>
 
 </div>
@@ -229,26 +293,33 @@ và kiểm soát chất lượng vật liệu xây dựng.
 </section>
 
 
+
 <section class="section">
 
 <div class="container about">
 
 <div>
 
-<h2>Giới thiệu</h2>
+<h2>GIỚI THIỆU</h2>
 
 <p>
-CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT là đơn vị chuyên
-thí nghiệm và kiểm định chất lượng vật liệu xây dựng.
+
+CÔNG TY TNHH KỸ THUẬT THUẬN PHÁT
+là đơn vị chuyên thí nghiệm và kiểm định
+chất lượng vật liệu xây dựng.
+
 </p>
 
 <p>
-Phòng thí nghiệm LAS-XD 15.001 được trang bị
-thiết bị hiện đại và đội ngũ kỹ sư có kinh nghiệm,
-đáp ứng các yêu cầu kiểm tra chất lượng công trình xây dựng.
+
+Phòng thí nghiệm LAS-XD 15.001
+được trang bị thiết bị hiện đại
+và đội ngũ kỹ sư giàu kinh nghiệm.
+
 </p>
 
 </div>
+
 
 <div>
 
@@ -261,6 +332,37 @@ thiết bị hiện đại và đội ngũ kỹ sư có kinh nghiệm,
 </section>
 
 
+
+<section class="section clients">
+
+<div class="container">
+
+<h2>KHÁCH HÀNG THÂN THIẾT</h2>
+
+<div class="client-slider">
+
+<div class="client-track">
+
+<img src="https://logo.clearbit.com/xuyenviet.com.vn">
+<img src="https://logo.clearbit.com/danghai.com.vn">
+<img src="https://logo.clearbit.com/intimex.com.vn">
+<img src="https://logo.clearbit.com/phuocyen.com.vn">
+<img src="https://logo.clearbit.com/nhattrieu.com.vn">
+<img src="https://logo.clearbit.com/hme.vn">
+<img src="https://logo.clearbit.com/delta.com.vn">
+<img src="https://logo.clearbit.com/thacoindustries.com">
+<img src="https://logo.clearbit.com/namviethung.com.vn">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
 <footer>
 
 <div class="container">
@@ -269,7 +371,7 @@ thiết bị hiện đại và đội ngũ kỹ sư có kinh nghiệm,
 
 <p>Phòng thí nghiệm vật liệu xây dựng LAS-XD 15.001</p>
 
-<p>Địa chỉ: Số 26 Phan Anh</p>
+<p>Địa chỉ: 26 Phan Anh, phường Cẩm Lệ, thành phố Đà Nẵng</p>
 
 <p>Điện thoại: 0236 6517 174</p>
 
