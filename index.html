@@ -1,174 +1,231 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Công ty TNHH LAS-XD Thuận Phát</title>
+<title>LAS-XD Thuận Phát</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Inter', sans-serif;
+}
+
 body{
-font-family:Arial, Helvetica, sans-serif;
 color:#333;
+line-height:1.6;
 }
 
-.navbar{
-background:#0c3c6c;
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
-.navbar-brand img{
-height:55px;
+header{
+background:white;
+border-bottom:1px solid #eee;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#0b5ed7;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
 }
 
 .hero{
-height:700px;
-background:url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab") center/cover no-repeat;
-position:relative;
+background:url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc") center/cover;
+height:500px;
 display:flex;
 align-items:center;
 color:white;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-top:0;
-left:0;
-}
-
 .hero-content{
-position:relative;
-z-index:2;
+background:rgba(0,0,0,0.55);
+padding:40px;
+max-width:600px;
 }
 
 .hero h1{
-font-size:55px;
-font-weight:700;
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.btn{
+background:#0b5ed7;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:4px;
 }
 
 .section{
-padding:90px 0;
+padding:70px 0;
 }
 
-.service-box{
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 15px 40px rgba(0,0,0,0.1);
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.service{
+border:1px solid #eee;
+padding:30px;
+border-radius:6px;
 transition:0.3s;
 }
 
-.service-box:hover{
-transform:translateY(-10px);
+.service:hover{
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.project img{
-height:250px;
-object-fit:cover;
+.service h3{
+margin-bottom:15px;
+color:#0b5ed7;
 }
 
-.stats{
-background:#0c3c6c;
+.about{
+background:#f7f7f7;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:6px;
+}
+
+.contact{
+background:#0b5ed7;
 color:white;
 text-align:center;
-}
-
-.stats h2{
-font-size:48px;
 }
 
 footer{
 background:#111;
-color:white;
-padding:40px;
+color:#aaa;
 text-align:center;
+padding:25px;
 }
 
 </style>
 
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<header>
+<div class="container nav">
 
-<div class="container">
-
-<a class="navbar-brand">
-<img src="logo.png">
-</a>
-
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item"><a class="nav-link">Trang chủ</a></li>
-<li class="nav-item"><a class="nav-link">Giới thiệu</a></li>
-<li class="nav-item"><a class="nav-link">Dịch vụ</a></li>
-<li class="nav-item"><a class="nav-link">Dự án</a></li>
-<li class="nav-item"><a class="nav-link">Liên hệ</a></li>
-
-</ul>
-
-</div>
+<div class="logo">
+LAS-XD Thuận Phát
 </div>
 
-</nav>
+<div class="menu">
+<a href="#">Trang chủ</a>
+<a href="#">Giới thiệu</a>
+<a href="#">Dịch vụ</a>
+<a href="#">Liên hệ</a>
+</div>
+
+</div>
+</header>
 
 <section class="hero">
+<div class="container">
 
-<div class="container hero-content">
+<div class="hero-content">
 
-<h1>CÔNG TY TNHH LAS-XD THUẬN PHÁT</h1>
+<h1>Phòng Thí Nghiệm Vật Liệu Xây Dựng</h1>
 
-<p class="lead">
-Khảo sát • Thiết kế • Thi công công trình xây dựng
+<p>
+Chuyên thí nghiệm vật liệu xây dựng, kiểm định chất lượng công trình,
+đáp ứng tiêu chuẩn LAS-XD theo quy định của Bộ Xây Dựng.
 </p>
 
-<a class="btn btn-warning btn-lg">Liên hệ tư vấn</a>
+<a class="btn" href="#">Liên hệ tư vấn</a>
 
 </div>
 
+</div>
 </section>
 
 <section class="section">
 
-<div class="container text-center">
+<div class="container">
 
-<h2 class="mb-5">Dịch vụ của chúng tôi</h2>
+<h2 class="section-title">
+Dịch vụ của chúng tôi
+</h2>
 
-<div class="row g-4">
+<div class="services">
 
-<div class="col-md-4">
-<div class="service-box">
-<h4>Khảo sát xây dựng</h4>
-<p>Khảo sát địa hình, địa chất phục vụ thiết kế.</p>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="service-box">
-<h4>Thiết kế công trình</h4>
-<p>Thiết kế kiến trúc và kết cấu công trình.</p>
-</div>
+<div class="service">
+<h3>Thí nghiệm bê tông</h3>
+<p>
+Kiểm tra cường độ nén bê tông, bê tông thương phẩm,
+đánh giá chất lượng theo tiêu chuẩn xây dựng.
+</p>
 </div>
 
-<div class="col-md-4">
-<div class="service-box">
-<h4>Thi công xây dựng</h4>
-<p>Thi công công trình dân dụng và công nghiệp.</p>
+<div class="service">
+<h3>Thí nghiệm cốt thép</h3>
+<p>
+Thí nghiệm kéo, uốn thép xây dựng nhằm kiểm tra
+các chỉ tiêu cơ lý của vật liệu.
+</p>
 </div>
+
+<div class="service">
+<h3>Thí nghiệm đất</h3>
+<p>
+Phân tích thành phần đất, xác định độ chặt,
+độ ẩm và các chỉ tiêu cơ lý phục vụ xây dựng.
+</p>
+</div>
+
+<div class="service">
+<h3>Kiểm định vật liệu</h3>
+<p>
+Đánh giá chất lượng vật liệu xây dựng phục vụ
+thi công và nghiệm thu công trình.
+</p>
 </div>
 
 </div>
@@ -177,25 +234,30 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 </section>
 
-<section class="section bg-light">
+<section class="section about">
 
 <div class="container">
 
-<h2 class="text-center mb-5">Dự án tiêu biểu</h2>
+<div class="about-grid">
 
-<div class="row g-4 project">
+<div>
+<h2>Về chúng tôi</h2>
 
-<div class="col-md-4">
-<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<p>
+Công ty TNHH LAS-XD Thuận Phát là đơn vị chuyên
+thí nghiệm và kiểm định chất lượng vật liệu xây dựng,
+đáp ứng các tiêu chuẩn kỹ thuật trong lĩnh vực xây dựng.
+</p>
+
+<p>
+Chúng tôi cung cấp dịch vụ thí nghiệm chính xác,
+uy tín và nhanh chóng cho các dự án xây dựng,
+công trình dân dụng và hạ tầng.
+</p>
+
 </div>
 
-<div class="col-md-4">
-<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
-</div>
-
-<div class="col-md-4">
-<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
-</div>
+<img src="https://images.unsplash.com/photo-1581091870627-3a3c8c09c6d4">
 
 </div>
 
@@ -203,28 +265,23 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 </section>
 
-<section class="section stats">
+<section class="section contact">
 
 <div class="container">
 
-<div class="row">
+<h2>Liên hệ</h2>
 
-<div class="col-md-4">
-<h2>15+</h2>
-<p>Năm kinh nghiệm</p>
-</div>
+<p>
+Địa chỉ: Số 26 Phan Anh, Đà Nẵng
+</p>
 
-<div class="col-md-4">
-<h2>120+</h2>
-<p>Dự án hoàn thành</p>
-</div>
+<p>
+Điện thoại: 0236 6517 174
+</p>
 
-<div class="col-md-4">
-<h2>50+</h2>
-<p>Khách hàng</p>
-</div>
-
-</div>
+<p>
+Email: thuanphatkt.company@gmail.com
+</p>
 
 </div>
 
@@ -232,12 +289,9 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 <footer>
 
-<p>Địa chỉ: 26 Phan Anh, Đà Nẵng</p>
-<p>Tel: 0236 6517 174 | Email: thuanphatkt.company@gmail.com</p>
+© 2026 LAS-XD Thuận Phát
 
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
