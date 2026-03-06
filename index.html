@@ -3,122 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Công ty TNHH LAS-XD Thuận Phát</title>
 
 <link rel="stylesheet" href="style.css">
-
-<style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f6f9;
-color:#333;
-}
-
-header{
-background:#0b3d6d;
-color:white;
-padding:15px 0;
-}
-
-.container{
-width:1200px;
-max-width:95%;
-margin:auto;
-}
-
-.header-flex{
-display:flex;
-align-items:center;
-justify-content:space-between;
-}
-
-.logo{
-height:60px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
-}
-
-nav a:hover{
-color:#ffd200;
-}
-
-.hero{
-background:#0b3d6d;
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.section{
-padding:60px 0;
-background:white;
-}
-
-.section h2{
-text-align:center;
-margin-bottom:40px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-}
-
-.service{
-background:#f4f6f9;
-padding:30px;
-border-radius:8px;
-text-align:center;
-}
-
-.service h3{
-margin-bottom:10px;
-}
-
-footer{
-background:#0b3d6d;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-
-.services{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:28px;
-}
-
-}
-
-</style>
 
 </head>
 
 <body>
 
 <header>
+
 <div class="container header-flex">
 
 <img src="logo.png" class="logo">
@@ -132,57 +27,87 @@ font-size:28px;
 </nav>
 
 </div>
+
 </header>
 
 <section class="hero">
 
+<div class="hero-content">
+
 <h1>CÔNG TY TNHH LAS-XD THUẬN PHÁT</h1>
 
 <p>
-Khảo sát – Thiết kế – Thi công công trình xây dựng
+Khảo sát • Thiết kế • Thi công công trình xây dựng
 </p>
+
+<a href="contact.html" class="btn">Liên hệ ngay</a>
+
+</div>
 
 </section>
 
-<section class="section">
+<section class="about">
 
 <div class="container">
 
 <h2>Giới thiệu công ty</h2>
 
-<p style="text-align:center; max-width:800px; margin:auto;">
+<p>
 Công ty TNHH LAS-XD Thuận Phát hoạt động trong lĩnh vực khảo sát,
 thiết kế và thi công các công trình xây dựng dân dụng và công nghiệp.
-Chúng tôi luôn hướng đến chất lượng, uy tín và sự hài lòng của khách hàng.
+Chúng tôi luôn đặt chất lượng công trình và uy tín doanh nghiệp lên hàng đầu.
 </p>
 
 </div>
 
 </section>
 
-<section class="section" style="background:#f4f6f9">
+<section class="services">
 
 <div class="container">
 
 <h2>Dịch vụ của chúng tôi</h2>
 
-<div class="services">
+<div class="service-grid">
 
-<div class="service">
+<div class="service-box">
 <h3>Khảo sát xây dựng</h3>
-<p>Khảo sát địa hình, địa chất phục vụ thiết kế và thi công công trình.</p>
+<p>Khảo sát địa hình, địa chất phục vụ thiết kế công trình.</p>
 </div>
 
-<div class="service">
+<div class="service-box">
 <h3>Thiết kế công trình</h3>
-<p>Thiết kế kiến trúc, kết cấu, hạ tầng kỹ thuật cho công trình.</p>
+<p>Thiết kế kiến trúc, kết cấu, hạ tầng kỹ thuật.</p>
 </div>
 
-<div class="service">
+<div class="service-box">
 <h3>Thi công xây dựng</h3>
-<p>Thi công các công trình dân dụng, công nghiệp và hạ tầng.</p>
+<p>Thi công các công trình dân dụng và công nghiệp.</p>
 </div>
 
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+<div>
+<h3>15+</h3>
+<p>Năm kinh nghiệm</p>
+</div>
+
+<div>
+<h3>120+</h3>
+<p>Dự án hoàn thành</p>
+</div>
+
+<div>
+<h3>50+</h3>
+<p>Khách hàng</p>
 </div>
 
 </div>
@@ -191,11 +116,21 @@ Chúng tôi luôn hướng đến chất lượng, uy tín và sự hài lòng c
 
 <footer>
 
-<p>Địa chỉ: 26 Phan Anh, Phường An Khê, Quận Thanh Khê, Đà Nẵng</p>
+<div class="container">
 
-<p>Tel: 0236 6517 174 – Email: thuanphatkt.company@gmail.com</p>
+<p>
+Địa chỉ: 26 Phan Anh, Phường An Khê, Quận Thanh Khê, Đà Nẵng
+</p>
 
-<p>© 2026 LAS-XD Thuận Phát</p>
+<p>
+Tel: 0236 6517 174 | Email: thuanphatkt.company@gmail.com
+</p>
+
+<p>
+© 2026 LAS-XD Thuận Phát
+</p>
+
+</div>
 
 </footer>
 
