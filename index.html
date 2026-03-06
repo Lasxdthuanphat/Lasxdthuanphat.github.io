@@ -7,12 +7,13 @@
 
 <title>Công ty TNHH LAS-XD Thuận Phát</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
 body{
-font-family:system-ui;
+font-family:Arial, Helvetica, sans-serif;
+color:#333;
 }
 
 .navbar{
@@ -20,26 +21,26 @@ background:#0c3c6c;
 }
 
 .navbar-brand img{
-height:50px;
+height:55px;
 }
 
 .hero{
-height:600px;
-background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") center/cover no-repeat;
+height:700px;
+background:url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab") center/cover no-repeat;
+position:relative;
 display:flex;
 align-items:center;
 color:white;
-position:relative;
 }
 
 .hero::before{
 content:"";
 position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.6);
+top:0;
+left:0;
 }
 
 .hero-content{
@@ -48,32 +49,39 @@ z-index:2;
 }
 
 .hero h1{
-font-size:48px;
+font-size:55px;
 font-weight:700;
 }
 
 .section{
-padding:80px 0;
+padding:90px 0;
 }
 
-.service-card{
-border:none;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+.service-box{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
-.service-card:hover{
-transform:translateY(-8px);
+.service-box:hover{
+transform:translateY(-10px);
 }
 
-.project-img{
-height:220px;
+.project img{
+height:250px;
 object-fit:cover;
 }
 
 .stats{
 background:#0c3c6c;
 color:white;
+text-align:center;
+}
+
+.stats h2{
+font-size:48px;
 }
 
 footer{
@@ -90,9 +98,10 @@ text-align:center;
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
+
 <div class="container">
 
-<a class="navbar-brand" href="#">
+<a class="navbar-brand">
 <img src="logo.png">
 </a>
 
@@ -104,16 +113,17 @@ text-align:center;
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Dịch vụ</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Dự án</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+<li class="nav-item"><a class="nav-link">Trang chủ</a></li>
+<li class="nav-item"><a class="nav-link">Giới thiệu</a></li>
+<li class="nav-item"><a class="nav-link">Dịch vụ</a></li>
+<li class="nav-item"><a class="nav-link">Dự án</a></li>
+<li class="nav-item"><a class="nav-link">Liên hệ</a></li>
 
 </ul>
 
 </div>
 </div>
+
 </nav>
 
 <section class="hero">
@@ -141,21 +151,21 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 <div class="row g-4">
 
 <div class="col-md-4">
-<div class="card service-card p-4">
+<div class="service-box">
 <h4>Khảo sát xây dựng</h4>
-<p>Khảo sát địa hình, địa chất phục vụ thiết kế và thi công.</p>
+<p>Khảo sát địa hình, địa chất phục vụ thiết kế.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card service-card p-4">
+<div class="service-box">
 <h4>Thiết kế công trình</h4>
-<p>Thiết kế kiến trúc, kết cấu, hạ tầng kỹ thuật.</p>
+<p>Thiết kế kiến trúc và kết cấu công trình.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card service-card p-4">
+<div class="service-box">
 <h4>Thi công xây dựng</h4>
 <p>Thi công công trình dân dụng và công nghiệp.</p>
 </div>
@@ -173,18 +183,18 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 <h2 class="text-center mb-5">Dự án tiêu biểu</h2>
 
-<div class="row g-4">
+<div class="row g-4 project">
 
 <div class="col-md-4">
-<img class="img-fluid project-img" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
 </div>
 
 <div class="col-md-4">
-<img class="img-fluid project-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
 </div>
 
 <div class="col-md-4">
-<img class="img-fluid project-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
 </div>
 
 </div>
@@ -195,7 +205,7 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 <section class="section stats">
 
-<div class="container text-center">
+<div class="container">
 
 <div class="row">
 
@@ -211,7 +221,7 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 <div class="col-md-4">
 <h2>50+</h2>
-<p>Đối tác khách hàng</p>
+<p>Khách hàng</p>
 </div>
 
 </div>
@@ -227,7 +237,7 @@ Khảo sát • Thiết kế • Thi công công trình xây dựng
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
