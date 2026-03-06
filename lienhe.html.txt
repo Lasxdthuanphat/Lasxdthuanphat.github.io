@@ -1,0 +1,9 @@
+<form>
+
+<input placeholder="Tên">
+<input placeholder="Email">
+<textarea placeholder="N?i dung"></textarea>
+
+<button>G?i</button>
+
+</form>
